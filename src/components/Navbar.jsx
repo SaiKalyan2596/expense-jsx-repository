@@ -21,9 +21,6 @@ const Navbar = () => {
             <NavLink to="/AboutUs">
                 <li>AboutUs</li>
             </NavLink>
-            <NavLink to="/Budget">
-                <li>Budget</li>
-            </NavLink>
         </ul>
         <div className='Gap'></div>
     </div>
