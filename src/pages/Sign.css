@@ -1,0 +1,164 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+/* Container Layout */
+.auth-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Left Section */
+.auth-image-section {
+  flex: 1;
+  background-image: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437b2');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+}
+
+.welcome-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 0, 50, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  text-align: left;
+}
+
+.welcome-overlay h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.welcome-overlay p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.welcome-features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.feature span {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+/* Right Section */
+.auth-form-section {
+  flex: 1;
+  background-color: #fff;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand {
+  color: #6a0dad;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.auth-form-section h1 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.auth-form-section p {
+  font-size: 14px;
+  margin-bottom: 30px;
+  color: #777;
+}
+
+/* Form */
+.auth-form label {
+  font-size: 13px;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  background: #6a0dad;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.auth-btn:hover {
+  background: #5209a0;
+}
+
+.switch-link {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #555;
+  text-align: center;
+}
+
+.switch-link a {
+  color: #6a0dad;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .auth-container {
+    flex-direction: column;
+  }
+
+  .auth-image-section {
+    height: 300px;
+    flex: none;
+  }
+
+  .welcome-overlay {
+    justify-content: flex-end;
+    padding-bottom: 20px;
+  }
+
+  .auth-form-section {
+    padding: 40px 20px;
+  }
+}

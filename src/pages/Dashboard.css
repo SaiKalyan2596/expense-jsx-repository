@@ -1,0 +1,26 @@
+/* Dashboard.css */
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #FF00FF, #00FFFF);
+  padding-top: 100px;
+}
+
+.dashboard-card {
+  background: linear-gradient(135deg, #FF1493, #FF69B4);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(255, 20, 147, 0.4);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Dashboard responsive styles */
+@media screen and (max-width: 768px) {
+  .dashboard-container {
+    padding-top: 80px;
+  }
+}
+

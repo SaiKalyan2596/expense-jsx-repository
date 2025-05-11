@@ -1,0 +1,31 @@
+/* Homepage.css */
+.homepage-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #00FFFF, #00CED1);
+  padding-top: 100px;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  width: 80%;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Homepage responsive styles */
+@media screen and (max-width: 1024px) {
+  .home-content {
+    flex-direction: column;
+  }
+}
